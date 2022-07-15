@@ -1,0 +1,49 @@
+.about {
+    padding-top: 60px;
+    background-color:#FFF5F6;
+
+    &__label-title {
+        margin-bottom: 15px;
+        color: #FFA5BA;
+        font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.67;
+        text-align: center;
+        text-transform: uppercase;
+
+        @include tablet {
+            margin-bottom: 15px;
+            font-size: 26px;
+            line-height: 1.15;
+        }
+
+        @include desktop {
+            font-size: 48px;
+            line-height: 1.15;
+        }
+    }
+
+    &__title {
+        color: #D41443;
+        font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 1.15;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+
+        @include tablet {
+            font-size: 48px;
+            line-height: 1.15;
+        }
+        
+        @include desktop {
+            font-size: 58px;
+            line-height: 1.15;
+        }
+    }
+}
