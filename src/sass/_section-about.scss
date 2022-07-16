@@ -1,6 +1,35 @@
 .about {
     padding-top: 60px;
     background-color:#FFF5F6;
+    background-image: url(../images/about/about-backgroundmilk-mobile.png);
+    background-size: 280px;
+    background-repeat: no-repeat;
+    background-position: center bottom 150px;
+    @mixin retina {
+        background-image: url(../images/about/about-backgroundmilk-mobile@2x.png);
+    }
+    @mixin retina-3x {
+        background-image: url(../images/about/about-backgroundmilk-mobile@3x.png);
+    }
+    @include tablet {
+        background-image: none;
+    }
+    @include desktop {
+        background-image: url(../images/about/about-backgroundmilk-desktop.png);
+        background-size: 1200px;
+        background-position: center bottom;
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/about/about-backgroundmilk-desktop@2x.png);
+        }
+        @media (min-device-pixel-ratio: 3),
+        (min-resolution: 288dpi),
+        (min-resolution: 3dppx) {
+            background-image: url(../images/about/about-backgroundmilk-desktop@3x.png);
+        }
+    }
+    
 
     &__label-title {
         margin-bottom: 15px;
