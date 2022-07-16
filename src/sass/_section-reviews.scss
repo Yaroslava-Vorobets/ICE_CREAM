@@ -2,11 +2,32 @@
     padding-bottom: 120px;
 }
 
+.slider {
+    position: relative;
+}
+
 .slider-block {
     text-align: center;
     align-items: center;
 }
 
-.slider-text {
-    background-color: #FAFAFA;
+.client {
+    margin-bottom: 16px;
 }
+
+.slider-text {   
+    padding: 32px 74px 31px 72px;
+    background-color: #FAFAFA;   
+    margin-bottom: 36px;
+    &::before {
+        display: block;
+        content:'';
+        top: 10px;
+        left: 10px;
+        width: 54px;
+        height: 40px;
+        fill: #E1E1E1;
+    }
+}
+
+
