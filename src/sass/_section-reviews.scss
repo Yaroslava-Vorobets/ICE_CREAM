@@ -1,0 +1,25 @@
+.swiper {
+  width: 968px;
+  height: 300px;
+}
+.swiper-slide{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-text{
+  max-width: 750px;
+  border-bottom: 1px solid #E1E1E1;
+  background-color: #FAFAFA;
+}
+
+.swiper-button-next, .swiper-button-prev{
+  color: var(--title-color);
+
+}
+
+.review-image{
+  max-width: 100%;
+}
