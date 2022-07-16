@@ -1,84 +1,93 @@
 <section>
   <div class="container">
-    <div class="slider-wrap">
-      <div class="slider">
-        <picture>
-          <source
-            srcset="
-              /src/images/rewievs/reviews-img-desktop.png    1x,
-              /src/images/rewievs/reviews-img-desktop@2x.png 2x
-            "
-            media="(min-width: 1200px)"
-          />
-          <source
-            srcset="
-              /src/images/rewievs/reviews-img-tablet.png    1x,
-              /src/images/rewievs/reviews-img-tablet@2x.png 2x
-            "
-            media="(min-width: 768px)"
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <picture>
             <source
-            srcset="
-              /src/images/rewievs/reviews-img-mobile.png    1x,
-              /src/images/rewievs/reviews-img-mobile@2x.png 2x
-            "
-            media="(min-width: 320px)"
-          />
-          <img
-            src="/src/images/rewievs/reviews-img-mobile@2x.png"
-            alt="client1"
-            width="85"
-            height="85"
-          />
-        </picture>
-        <p class="slider-text">
-          Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
-          Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
-          ipsum primis in nibh vel risus.
-        </p>
-        <p class="slider-name">Emily, Los Angeles</p>
+              srcset="
+                /src/images/rewievs/reviews-img-desktop.png    1x,
+                /src/images/rewievs/reviews-img-desktop@2x.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                /src/images/rewievs/reviews-img-tablet.png    1x,
+                /src/images/rewievs/reviews-img-tablet@2x.png 2x
+              "
+              media="(min-width: 768px)"
+              <source
+              srcset="
+                /src/images/rewievs/reviews-img-mobile.png    1x,
+                /src/images/rewievs/reviews-img-mobile@2x.png 2x
+              "
+              media="(min-width: 320px)"
+            />
+            <img
+              src="/src/images/rewievs/reviews-img-mobile@2x.png"
+              alt="client1"
+              width="85"
+              height="85"
+              class="review-image"
+            />
+          </picture>
+          <p class="slide-text">
+            Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+            Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
+            ipsum primis in nibh vel risus.
+          </p>
+          <p class="slide-name">Emily, Los Angeles</p>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source
+              srcset="
+                /src/images/rewievs/reviews-img2-desktop.png    1x,
+                /src/images/rewievs/reviews-img2-desktop@2x.png 2x
+              "
+            />
+            <img
+              src="/src/images/rewievs/reviews-img2-desktop@2x.png"
+              alt="client2"
+              width="85"
+              height="85"
+              class="review-image"
+            />
+          </picture>
+          <p class="slide-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At, amet
+            eius. Pariatur, recusandae.
+          </p>
+          <p class="slide-name">Kate, Chicago</p>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source
+              srcset="
+                /src/images/rewievs/reviews-img3-desktop.png    1x,
+                /src/images/rewievs/reviews-img3-desktop@2x.png 2x
+              "
+            />
+            <img
+              src="/src/images/rewievs/reviews-img3-desktop@2x.png"
+              alt="client3"
+              width="85"
+              height="85"
+              class="review-image"
+            />
+          </picture>
+          <p class="slide-text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel,
+            minima porro sint quod praesentium facere!
+          </p>
+          <p class="slide-name">Ana, New York</p>
+        </div>
       </div>
-      <div class="slider">
-        <picture>
-          <source
-            srcset="
-              /src/images/rewievs/reviews-img2-desktop.png    1x,
-              /src/images/rewievs/reviews-img2-desktop@2x.png 2x
-            "
-          />
-          <img
-            src="/src/images/rewievs/reviews-img2-desktop@2x.png"
-            alt="client2"
-            width="85"
-            height="85"
-          />
-        </picture>
-        <p class="slider-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. At, amet
-          eius. Pariatur, recusandae.
-        </p>
-        <p class="slider-name">Kate, Chicago</p>
-      </div>
-      <div class="slider">
-        <picture>
-          <source
-            srcset="
-              /src/images/rewievs/reviews-img3-desktop.png    1x,
-              /src/images/rewievs/reviews-img3-desktop@2x.png 2x
-            "
-          />
-          <img
-            src="/src/images/rewievs/reviews-img3-desktop@2x.png"
-            alt="client3"
-            width="85"
-            height="85"
-          />
-        </picture>
-        <p class="slider-text">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, minima
-          porro sint quod praesentium facere!
-        </p>
-        <p class="slider-name">Ana, New-York</p>
-      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
   </div>
 </section>
+
