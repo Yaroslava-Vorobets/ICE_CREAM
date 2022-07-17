@@ -1,21 +1,23 @@
 .contacts {
+    padding-bottom: 40px;
     @media screen and (max-width: 767.98px) {
     background-image: linear-gradient(to bottom,
                 #FFFFFF 21%,
                 #fff5f6 21%,
-                #fff5f6 100%)
+                #fff5f6 100%);
     }
     @media screen and (min-width: 768px) {
     background-image: linear-gradient(to bottom,
-                #FFFFFF 47%,
-                #fff5f6 47%,
-                #fff5f6 100%)
+                #FFFFFF 44%,
+                #fff5f6 44%,
+                #fff5f6 100%);
     }
     @media screen and (min-width: 1200px) {
     background-image: linear-gradient(to bottom,
-                #FFFFFF 16%,
-                #fff5f6 16%,
-                #fff5f6 100%)
+                #FFFFFF 13%,
+                #fff5f6 13%,
+                #fff5f6 100%);
+    padding-bottom: 120px;
     }
 }
 
