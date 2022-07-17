@@ -64,10 +64,12 @@
     border-radius: 22px;
     border: none;
     height: 44px;
+    transition: background-color 250ms ease-in-out, transform 250ms ease-in-out;
 
     &:hover,
     &:focus {
         background-color: var(--btn-hover-color);
+        transform: scale(0.9)
     }
 
 
@@ -119,6 +121,12 @@
     border-radius: 50%;
     background-color: var(--subtitle-color);
     z-index: 0;
+    animation-name: appPinkCircle;
+    animation-duration: 250ms;
+    animation-timing-function: linear;
+    animation-delay: 500ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 
     @media screen and (max-width:767px){
         z-index: 1;
@@ -138,11 +146,26 @@
         left: 517px;
     }
 }
+@keyframes appPinkCircle {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 .hero__ice {
     position: absolute;
     top: 92px;
     left: 117px;
     z-index: 2;
+    animation-name: appIceCream;
+    animation-duration: 250ms;
+    animation-timing-function: linear;
+    animation-delay: 500ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 
     @include tablet {
         top: 80px;
@@ -151,6 +174,14 @@
     @include desktop {
         top: 108px;
         left: 636px;
+    }
+}
+@keyframes appIceCream {
+    0% {
+        transform: translateY(101%);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
 
@@ -179,6 +210,12 @@
     color: var(--bcg-color);
     width: 218px;
     margin-bottom: 20px;
+    animation-name: appHeroTitle;
+    animation-duration: 2500ms;
+    animation-timing-function: linear;
+    animation-delay: 500ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 
     @include tablet {
         font-size: 22px;
@@ -191,6 +228,17 @@
         line-height: 1.16;
         width: 277px;
         margin-bottom: 24px;
+    }
+}
+@keyframes appHeroTitle {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
     }
 }
 
@@ -211,10 +259,13 @@
 }
 
 
-.header-btn__prod {
-    display: inline-block;
+.header__prod {
+    display: inline-flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    padding-top: auto;
+    padding-bottom: auto;
     font-family: var(--standard-ff);
     font-style: normal;
     font-weight: 400;
@@ -226,6 +277,7 @@
     border: none;
     height: 24px;
     min-width: 64px;
+    transition: transform 250ms linear;
 
     @include desktop {
         height: 40px;
@@ -233,12 +285,17 @@
         font-size: 14px;
         line-height: 1.29;
     }
+    &:hover,
+    &:focus {
+        transform: scale(0.9);
+    }
 }
 
-.header-btn__about {
-    display: inline-block;
+.header__about {
+    display: inline-flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-family: var(--standard-ff);
     font-style: normal;
     font-weight: 400;
@@ -249,6 +306,7 @@
     border-radius: 20px;
     border: none;
     height: 24px;
+    transition: background-color 250ms linear, transform 250ms linear;
 
     @include desktop {
         height: 40px;
@@ -260,6 +318,7 @@
     &:hover,
     &:focus {
         background-color: var(--btn-hover-color);
+        transform: scale(0.9);
     }
 }
 
@@ -518,6 +577,7 @@
 .menu-container .menu-toggle {
     border: none;
     background-color: transparent;
+    transition: transform 500ms ease-out;
 
     @media screen and (max-width: 767px) {
         position: absolute;
@@ -527,6 +587,11 @@
 
     @include desktop {
         display: none;
+    }
+
+    &:hover,
+    &:focus {
+        transform: rotate(180deg);
     }
 }
 
