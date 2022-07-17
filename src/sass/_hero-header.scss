@@ -414,11 +414,11 @@
         background-image: url(/src/images/hero/hero-milk-tablet@2x.png);
     }
 
-    // @media (min-device-pixel-ratio: 3),
-    // (min-resolution: 288dpi),
-    // (min-resolution: 3dppx) {
-    //     background-image: url(/src/images/hero/hero-milk-tablet@3x.png);
-    // }
+    @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+        background-image: url(/src/images/hero/hero-milk-tablet@3x.png);
+    }
 
     @media screen and (min-width: 1200px) {
         top: -68px;
