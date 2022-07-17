@@ -36,38 +36,89 @@
   padding: 43px 50px 17px 50px;
   background-color: #fafafa;
   margin-bottom: 36px;
+  position: relative;
   @include tablet {
     width: 620px;
-    padding: 20px 6px 36px 6px;
+    padding: 37px 6px 36px 6px;
     margin-bottom: 24px;
   }
-
   @include desktop {
     width: 968px;
-    padding: 32px 74px 31px 72px;
+    padding: 46px 74px 31px 72px;
     margin-bottom: 36px;
+  }
+  &::before {
+    content: '';
+    background-image: url(../images/rewievs/coma.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 54px;
+    height: 40px;
+    left: 53;
+    top: 30;
+    position: absolute;
+    z-index: 1;
+    @include tablet {
+      width: 60px;
+      height: 40px;
+      left: 6;
+      top: 20;
+    }
+    @include desktop {
+      width: 54px;
+      height: 40px;
+      left: 71;
+      top: 31;
+    }
+  }
+  &::after {
+    content: '';
+    background-image: url(../images/rewievs/3dots32-4.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 32px;
+    height: 4px;
+    left: Calc(50% - 16px);
+    bottom: -16;
+    position: absolute;
+    @include tablet {
+      bottom: -4;
+    }
+    @include desktop {
+      bottom: -16;
+    }
+  }
+}
+
+.swiper__text {
+  width: 100%;
+  padding: 0 8px 0 15px;
+  background-image: repeating-linear-gradient(
+    to top,
+    #e1e1e1,
+    #e1e1e1 1px,
+    #fafafa 1px,
+    #fafafa 31px
+  );
+  @include tablet {
+    padding: 0 50px 0 45px;
+  }
+  @include desktop {
+    padding: 0 36px 0 35px;
   }
 }
 
 .slider-text {
-  //   padding: 32px 74px 31px 72px;
-  //   background-color: #fafafa;
-  //   margin-bottom: 36px;
-  //   &::before {
-  //     display: block;
-  //     content: '';
-  //     top: 10px;
-  //     left: 10px;
-  //     width: 54px;
-  //     height: 40px;
-  //     fill: #e1e1e1;
-  //   }
   font-family: var(--standard-ff);
   font-weight: 500;
   color: var(--text-color);
   font-size: 12px;
   line-height: 2.55;
   text-align: center;
+  position: relative;
+  z-index: 3;
   @include tablet {
     font-size: 14px;
     line-height: 2.16;
@@ -86,10 +137,13 @@
   font-size: 14px;
   line-height: 1.86;
   text-align: center;
+  margin-bottom: 16px;
   @include tablet {
     font-size: 16px;
+    margin-bottom: 32px;
   }
   @include desktop {
     font-size: 20px;
+    margin-bottom: 16px;
   }
 }
