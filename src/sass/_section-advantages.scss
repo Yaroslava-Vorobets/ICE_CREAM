@@ -1,4 +1,10 @@
-.advantages__list {
+.advantages{
+    padding-top: 60px;
+    padding-bottom: 120px;
+    background-color: var(--secondary-bcg-color);
+}
+
+.advantages__list { 
 
     @media screen and (min-width: 768px) {
         display: flex;
@@ -10,6 +16,11 @@
     }
 }
 
+.advantages__item{
+    @media screen and (min-width:320px) and (max-width:767px){
+        margin-bottom: 32px;
+    }
+}
 .advantages__item-count {
     font-family: var(--title-ff);
     font-style: normal;
