@@ -97,6 +97,10 @@
 
     &__img-wrapper {
         margin-bottom: 40px;
+
+        @mixin tablet {
+            margin-bottom: 0;
+        }
     }
 
     &__text-wrapper {
