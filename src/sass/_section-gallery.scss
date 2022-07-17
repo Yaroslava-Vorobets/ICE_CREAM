@@ -17,6 +17,7 @@
     padding-bottom: 120px;
   }
 }
+
 .gallery__container{
     width: 320px;
     margin-right: auto;
@@ -77,6 +78,7 @@
 }
 @media screen and (min-width:1200px) {
     transform: translateY(84px);
+}
 }
 
 .gallery__item-five {
@@ -165,4 +167,5 @@
         width: 283px;
         height: 283px;
     }
+}
 }
