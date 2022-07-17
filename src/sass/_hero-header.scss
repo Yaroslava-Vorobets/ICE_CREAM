@@ -1,5 +1,6 @@
 .header {
     background-color: var(--pink-hero-color);
+    overflow: hidden;
 }
 
 .header .container {
@@ -107,6 +108,43 @@
     width: 5px;
     height: 8px;
     fill: var(--title-color);
+}
+.pink-ellips {
+    position: absolute;
+    top: 83px;
+    left: 36px;
+    width: 346px;
+    height: 346px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--subtitle-color);
+
+    @media screen and (min-width: 768px) {
+        width: 335px;
+        height: 333px;
+        top: 43px;
+        left: 248px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 534px;
+        height: 534px;
+        top: 54px;
+        left: 517px;
+    }
+}
+.hero__ice {
+    position: absolute;
+    top: 92px;
+    left: 117px;
+    @media screen and (min-width: 768px) {
+        top: 80px;
+        left: 322px;
+    }
+    @media screen and (min-width: 1200px) {
+        top: 108px;
+        left: 636px;
+    }
 }
 
 .hero {
@@ -440,6 +478,7 @@
         height: 26px;
     }
 }
+
 
 // мобильное меню
 
