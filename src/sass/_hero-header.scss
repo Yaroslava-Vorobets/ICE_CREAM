@@ -120,6 +120,10 @@
     background-color: var(--subtitle-color);
     z-index: 0;
 
+    @media screen and (max-width:767px){
+        z-index: 1;
+    }
+
     @media screen and (min-width: 768px) {
         width: 335px;
         height: 333px;
@@ -138,6 +142,7 @@
     position: absolute;
     top: 92px;
     left: 117px;
+    z-index: 2;
     @media screen and (min-width: 768px) {
         top: 80px;
         left: 322px;
@@ -157,6 +162,10 @@
         margin-bottom: 108px;
     }
 }
+.hero-basic{
+    z-index: 3;
+}
+
 
 .header__title {
     font-family: var(--title-ff);
