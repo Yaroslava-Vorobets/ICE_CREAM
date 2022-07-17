@@ -2,6 +2,9 @@
   background-color: var(--secondary-bcg-color);
   padding-top: 40px;
   position: relative;
+  @include desktop {
+    padding-top: 120px;
+  }
 }
 
 .footer__container {
