@@ -1,6 +1,4 @@
-const { default: Swiper } = require("swiper");
-
-const swiper = new Swiper('.swiper-slide', {
+const swiper = new Swiper('.swiper-block', {
   // Optional parameters
   direction: 'vertical',
   loop: true,
