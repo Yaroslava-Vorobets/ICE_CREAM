@@ -1,0 +1,49 @@
+<div class="backdrop" data-modal>
+  <div class="modal">
+    <button type="button" class="close-btn" data-modal-close> X
+    </button>
+    <p class="modal__title">Buy now and get our Prime Member Card!</p>
+    <form class="modal__form form">
+      <div class="form__name">
+        <label for="name" class="form__label"> Please write your name </label>
+        <div class="input">
+          <input
+            type="text"
+            name="user-name"
+            id="name"
+            class="input__field"
+            required
+          />
+          <svg width="16" height="16" class="icon modal__icon">
+            <use href="/src/images/icons.svg#icon-user"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="form__phone">
+        <label for="tel" class="form__label"> ...and your phone number </label>
+        <div class="input">
+          <input type="tel" name="tel" id="tel" class="input__field" required />
+          <svg width="16" height="16" class="icon modal__icon">
+            <use href="/src/images/icons.svg#icon-mobile"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="form__email">
+        <label for="mail" class="form__label"> Please put order here </label>
+        <div class="input">
+          <input
+            type="email"
+            name="mail"
+            id="mail"
+            class="input__field"
+            required
+          />
+          <svg width="16" height="16" class="icon modal__icon">
+            <use href="/src/images/icons.svg#icon-bubble2"></use>
+          </svg>
+        </div>
+      </div>
+      <button type="submit" class="send-btn"> Send </button>
+    </form>
+  </div>
+</div>
