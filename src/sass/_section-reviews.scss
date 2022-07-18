@@ -10,9 +10,14 @@
 }
 
 .swiper {
-  width: 968px;
-  height: 350px;
-
+  width: 280px;
+  height: auto;
+  @include tablet{
+    width: 608px;
+  }
+  @include desktop {
+    width: 968px;
+  }
 }
 
 .swiper-slide {
