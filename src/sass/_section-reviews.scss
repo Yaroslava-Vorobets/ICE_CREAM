@@ -28,10 +28,9 @@
   align-items: center;
 }
 
-.swiper .swiper-pagination-vertical.swiper-pagination-bullets,
-.swiper-vertical > .swiper-pagination-bullets {
-  transform: translateX(-50%) rotate(90deg);
-  top: 95%;
+.swiper-horizontal>.swiper-pagination-bullets{
+  position: absolute;
+  bottom: 0;
 }
 
 .swiper .swiper-pagination-bullet {
@@ -172,6 +171,6 @@
   }
   @include desktop {
     font-size: 20px;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
   }
 }
