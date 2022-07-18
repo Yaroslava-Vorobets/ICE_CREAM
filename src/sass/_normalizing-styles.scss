@@ -8,7 +8,8 @@ h6 {
   margin: 0;
 }
 
-ol, ul {
+ol,
+ul {
   margin: 0;
   padding-left: 0;
   list-style-type: none;
@@ -22,4 +23,8 @@ img {
   max-width: 100%;
   display: block;
   height: auto;
+}
+
+body {
+  scroll-behavior: smooth;
 }
