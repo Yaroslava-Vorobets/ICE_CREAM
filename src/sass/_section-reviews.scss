@@ -10,9 +10,15 @@
 }
 
 .swiper {
-  width: 968px;
-  height: 350px;
+  width: 280px;
+  height: 100%;
 
+  @include tablet {
+    width: 736px;
+  }
+  @include desktop {
+    width: 968px;
+  }
 }
 
 .swiper-slide {
@@ -20,6 +26,27 @@
   flex-direction: column;
   text-align: center;
   align-items: center;
+}
+
+.swiper .swiper-pagination-vertical.swiper-pagination-bullets,
+.swiper-vertical > .swiper-pagination-bullets {
+  transform: translateX(-50%) rotate(90deg);
+  top: 95%;
+}
+
+.swiper .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #d9d9d9;
+  opacity: 1;
+}
+
+.swiper .swiper-pagination-bullet-active {
+  background-image: url(/src/images/pagination-house.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .client {
