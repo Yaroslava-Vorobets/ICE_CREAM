@@ -28,7 +28,7 @@
   align-items: center;
 }
 
-.swiper-horizontal>.swiper-pagination-bullets{
+.swiper-horizontal > .swiper-pagination-bullets {
   position: absolute;
   bottom: 0;
 }
@@ -42,9 +42,13 @@
   opacity: 1;
 }
 
-.swiper .swiper-pagination-bullet-active {
-  background-image: url(/src/images/pagination-house.svg);
-  background-repeat: no-repeat;
+.swiper .swiper-pagination-bullet-active,
+.swiper .swiper-pagination-bullet-active-main {
+  background-image: url(/src/images/pag-house.png);
+  background-position: 50% 50%;
+  background-size: 100%;
+  background-color: transparent;
+  border-radius: 0;
 }
 
 .client {
