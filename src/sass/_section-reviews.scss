@@ -111,14 +111,14 @@
     background-position: center;
     width: 32px;
     height: 4px;
-    left: Calc(50% - 16px);
-    bottom: -16;
+    left: calc(50% - 16px);
+    bottom: -16px;
     position: absolute;
     @include tablet {
-      bottom: -4;
+      bottom: -4px;
     }
     @include desktop {
-      bottom: -16;
+      bottom: -16px;
     }
   }
 }

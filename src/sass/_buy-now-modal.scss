@@ -6,6 +6,7 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
+  z-index: 10;
 
   &.is-hidden {
     visibility: hidden;
@@ -39,11 +40,10 @@
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  z-index: 99;
 
   @media screen and (min-width: 320px) and (max-width: 479px) {
     width: 100%;
-    height: 100vh;
+    height: fit-content;
     max-width: 450px;
     max-height: 100vh;
   }
@@ -73,23 +73,38 @@
 
 .close-btn {
   position: absolute;
-  top: 15px;
-  right: 25px;
+  top: 8px;
+  right: 15px;
   cursor: pointer;
-  background-color: var(--subtitle-color);
-  width: 24px;
-  height: 24px;
+  background-color: var(--bcg-color);
+  width: 22px;
+  height: 22px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: none;
-  border-radius: 3px;
-  transition: background-color 350ms ease-in-out;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  transition: border-color 350ms ease-in-out;
 
-  &:hover,
-  &:focus {
-    background-color: var(--title-color);
+  &:hover, &:focus{
+    border-color: var(--title-color);
   }
+
+
+  &:hover .buy-close-icon,
+  &:focus .buy-close-icon {
+    fill: var(--title-color);
+  }
+
+  @include desktop {
+    top: 15px;
+    right: 25px;
+  }
+}
+
+.buy-close-icon{
+  fill:#907E82;
+  transition: fill 350ms ease-in-out;
 }
 
 .modal .icon:not(:first-child) {
@@ -122,21 +137,19 @@
   }
 }
 
-.input__field:focus,
-.form__comment-input:focus {
+.input__field:focus {
   border-color: var(--accent-color);
 }
 
 .form__name,
 .form__phone,
-.form__email,
-.form__comment {
+.form__order {
   width: 100%;
 }
 
 .form__name,
 .form__phone,
-.form__email {
+.form__order {
   margin-bottom: 20px;
 }
 
@@ -156,7 +169,7 @@
 .send-btn {
   border: 1px solid var(--title-color);
   border-radius: 20px;
-  padding: 11px 37px;
+  padding: 11px 20px;
   font-family: var(--standard-ff);
   font-weight: 500;
   font-size: 16px;
@@ -165,8 +178,8 @@
   background-color: var(--btn-hover-color);
   transition: background-color 0.25s ease-in-out, transform 0.25s ease-in-out;
 
-  &__btn:hover,
-  &__btn:focus {
+  &:hover,
+  &:focus {
     background-color: var(--subtitle-color);
     transform: scale(0.9);
   }
