@@ -327,3 +327,13 @@
     transform: scale(0.9);
   }
 }
+
+.contacts__more {
+@media screen and (max-width: 767.98px) {
+    margin-left: 8px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 13px;
+  }
+}
