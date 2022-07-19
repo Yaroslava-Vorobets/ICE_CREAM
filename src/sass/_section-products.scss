@@ -298,6 +298,11 @@
   align-items: center;
   margin-top: 32px;
   display: flex;
+  transition: background-color 0.25s ease-in-out;
+
+  &:hover {
+    background-color: var(--btn-hover-color);
+  }
 }
 
 .products__icon {
