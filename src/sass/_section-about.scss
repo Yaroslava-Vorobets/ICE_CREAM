@@ -35,7 +35,7 @@
   &__label-title {
     margin-bottom: 15px;
     color: #ffa5ba;
-    font-family: 'Titan One';
+    font-family: var(--title-ff);
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -58,7 +58,7 @@
   &__title {
     margin-bottom: 32px;
     color: #d41443;
-    font-family: 'Titan One';
+    font-family: var(--title-ff);
     font-style: normal;
     font-weight: 400;
     font-size: 34px;
@@ -118,7 +118,7 @@
 
   &__text:nth-child(1) {
     margin-bottom: 28px;
-    font-family: 'DM Sans';
+    font-family: var(--standard-ff);
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -138,7 +138,7 @@
 
   &__text:nth-child(2) {
     margin-bottom: 14px;
-    font-family: 'DM Sans';
+    font-family: var(--standard-ff);
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -158,7 +158,7 @@
 
   &__text:nth-child(3) {
     margin-bottom: 20px;
-    font-family: 'DM Sans';
+    font-family: var(--standard-ff);
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -182,7 +182,7 @@
     border: none;
     border-radius: 20px;
     padding: 11px 37px;
-    font-family: 'DM Sans';
+    font-family: var(--standard-ff);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.29;
@@ -237,7 +237,7 @@
 
   &__text {
     margin-bottom: 28px;
-    font-family: 'DM Sans';
+    font-family: var(--standard-ff);
     font-style: normal;
     font-weight: 500;
     font-size: 12px;

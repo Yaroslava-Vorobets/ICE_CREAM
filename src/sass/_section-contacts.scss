@@ -63,7 +63,7 @@
 }
 
 .contacts__category-repr {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--standard-ff), sans-serif;
   font-weight: 500;
   line-height: 1.86;
   letter-spacing: 0.04em;
@@ -102,7 +102,7 @@
 }
 
 .contacts__town {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--standard-ff), sans-serif;
   font-weight: 500;
   line-height: 1.86;
   letter-spacing: 0.04em;
@@ -129,7 +129,7 @@
 }
 
 .contacts_town-subtitle {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--standard-ff), sans-serif;
   font-weight: 500;
   color: var(--secondary-text-color);
   background-color: transparent;
@@ -187,7 +187,7 @@
 }
 
 .contacts__days-time {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--standard-ff), sans-serif;
   font-weight: 500;
   background-color: transparent;
   display: flex;
@@ -226,7 +226,7 @@
 }
 
 .contacts__tel-email {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--standard-ff), sans-serif;
   font-weight: 500;
   color: var(--secondary-text-color);
   margin: 0 auto 0 0;
@@ -277,7 +277,7 @@
   border: 0;
   border-radius: 22px;
   background-color: #d41342;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--standard-ff), sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
@@ -323,7 +323,7 @@
   border: 0;
   border-radius: 22px;
   background-color: var(--bcg-color);
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--standard-ff), sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
