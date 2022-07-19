@@ -28,14 +28,12 @@
 }
 
 .contacts__list {
-  display: flex;
-  @media screen and (max-width: 767.98px) {
-    flex-direction: column;
-    margin-bottom: 32px;
-  }
-  @media screen and (min-width: 768px) {
-    //flex-direction: row;
-    //flex-wrap: wrap;
+    display: flex;
+    @media screen and (max-width: 767.98px) {
+        flex-direction: column; 
+        margin-bottom: 32px;       
+    }
+    @media screen and (min-width:768px) {
     margin-left: -32px;
     margin-bottom: 60px;
   }
@@ -139,7 +137,6 @@
   @media screen and (max-width: 767.98px) {
     font-size: 12px;
     line-height: 1.5;
-    //letter-spacing: 0.04em;
     margin: 0 auto 24px 0;
     width: 179px;
     height: 36px;
@@ -147,7 +144,6 @@
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.66;
-    //letter-spacing: 0.04em;
     margin: 0 auto 32px 0;
     width: 159px;
     height: 65px;
@@ -155,7 +151,6 @@
   @media screen and (min-width: 1200px) {
     font-size: 16px;
     line-height: 1.83;
-    //letter-spacing: 0.04em;
     width: 250px;
     height: 50px;
   }
@@ -238,21 +233,15 @@
   @media screen and (max-width: 767.98px) {
     font-size: 12px;
     line-height: 1.5;
-    //letter-spacing: 0.04em;
-    //width: 179px;
-    height: 18px;
-  }
-  @media screen and (min-width: 768px) {
+    height: 18px;   
+}
+@media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.83;
-    //letter-spacing: 0.04em;
-    //width: 179px;
     height: 24px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 16px;
-    //letter-spacing: 0.04em;
-    //width: 179px;
     height: 25px;
   }
   &:hover,
@@ -286,30 +275,19 @@
   cursor: pointer;
   transition: background-color 0.25s ease-in-out, transform 0.25s ease-in-out;
   @media screen and (max-width: 767.98px) {
-    //display: flex;
-    //justify-content: center;
-    //align-items: center;
     width: 161px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
   }
   @media screen and (min-width: 768px) {
-    //display: flex;
-    //justify-content: center;
-    //align-items: center;
     width: 191px;
     margin-left: 0;
     margin-right: 14.5px;
-    //margin-bottom: 10px;
   }
   @media screen and (min-width: 1200px) {
-    //display: flex;
-    //justify-content: center;
-    //align-items: center;
     width: 198px;
     margin-right: 12px;
-    //margin-bottom: 10px;
   }
   &:hover,
   &:focus {
@@ -333,26 +311,14 @@
   transition: background-color 0.25s ease-in-out, transform 0.25s ease-in-out;
 
   @media screen and (max-width: 767.98px) {
-    //display: flex;
-    //justify-content: center;
-    //align-items: center;
     width: 161px;
     margin-left: auto;
     margin-right: auto;
   }
   @media screen and (min-width: 768px) {
-    //display: flex;
-    //justify-content: center;
-    //align-items: center;
     width: 174px;
-    //margin-left: 0;
-    //margin-right: 0;
-    //margin-bottom: 10px;
   }
   @media screen and (min-width: 1200px) {
-    //display: flex;
-    //justify-content: center;
-    //align-items: center;
     width: 168px;
   }
   &:hover,
