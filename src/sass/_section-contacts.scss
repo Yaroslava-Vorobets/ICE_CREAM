@@ -337,3 +337,41 @@
     margin-left: 13px;
   }
 }
+
+.location__map {
+  width: 260px;
+  height: 300px;
+  border: none;
+  margin-bottom: 30px;
+
+  @include desktop {
+    width: 450px;
+  }
+}
+
+.location__town {
+  font-family: var(--standard-ff), sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  color: var(--text-color);
+
+  @include desktop {
+    font-size: 16px;
+    line-height: 1.83;
+  }
+}
+
+.location__subtitle {
+  font-family: var(--standard-ff), sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--secondary-text-color);
+
+  @include desktop {
+    font-size: 16px;
+    line-height: 1.83;
+  }
+}
