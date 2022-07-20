@@ -7,9 +7,8 @@
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   z-index: 10;
-
+  transition: opacity 250ms linear, transform 250ms linear;
   &.is-hidden {
-    visibility: hidden;
     opacity: 0;
     pointer-events: none;
   }
@@ -18,6 +17,7 @@
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.7);
   opacity: 0;
+  transition: opacity 250ms linear, transform 250ms linear;
 }
 
 @include mobile {
@@ -40,6 +40,7 @@
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms linear, transform 250ms linear;
 
   @media screen and (min-width: 320px) and (max-width: 479px) {
     width: 100%;
@@ -86,10 +87,10 @@
   border-radius: 50%;
   transition: border-color 350ms ease-in-out;
 
-  &:hover, &:focus{
+  &:hover,
+  &:focus {
     border-color: var(--title-color);
   }
-
 
   &:hover .buy-close-icon,
   &:focus .buy-close-icon {
@@ -102,8 +103,8 @@
   }
 }
 
-.buy-close-icon{
-  fill:#907E82;
+.buy-close-icon {
+  fill: #907e82;
   transition: fill 350ms ease-in-out;
 }
 
